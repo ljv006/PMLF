@@ -3,6 +3,8 @@ import json
 import jieba
 import os
 
+jieba.analyse.set_stop_words(file_name)
+
 def is_chinese(uchar):
 	if uchar == u'\uff01' or uchar == u'\u3002' or \
 	 uchar == u'\uff1f' or uchar == u'\uff0c':
